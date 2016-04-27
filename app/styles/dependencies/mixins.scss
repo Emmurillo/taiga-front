@@ -30,8 +30,8 @@
 }
 
 @mixin popover($width, $top: '', $left: '', $bottom: '', $right: '', $arrow-width: 0, $arrow-top: '', $arrow-left: '', $arrow-bottom: '', $arrow-height: 15px) {
-    @extend %light;
-    @extend %small;
+    @include font-type(light);
+    @include font-size(small);
     background: $blackish;
     bottom: #{$bottom};
     color: $white;
@@ -46,7 +46,7 @@
     width: $width;
     z-index: 99;
     a {
-        @extend %small;
+        @include font-size(small);
         border-bottom: 1px solid $grayer;
         color: $white;
         display: block;
@@ -104,7 +104,7 @@
 // Mixin for track buttons
 @mixin list-itemtype-track {
     .list-itemtype-track {
-        @extend %small;
+        @include font-size(small);
         color: $gray-light;
         display: flex;
         flex-shrink: 0;

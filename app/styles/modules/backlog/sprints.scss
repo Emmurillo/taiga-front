@@ -22,7 +22,7 @@
         }
     }
     .filter-closed-sprints {
-        @extend %small;
+        @include font-size(small);
         align-content: center;
         display: flex;
         justify-content: center;
@@ -45,8 +45,8 @@
     }
     .sprint-name {
         a {
-            @extend %large;
-            @extend %title;
+            @include font-size(large);
+            @include font-type(text);
             @include ellipsis($width: 90%);
             display: inline-block;
             margin-right: .5rem;
@@ -80,10 +80,10 @@
             }
         }
         .number {
-            @extend %large;
+            @include font-size(large);
         }
         .description {
-            @extend %xsmall;
+            @include font-size(x-small);
             line-height: .6rem;
             margin-top: 5px;
         }
@@ -92,8 +92,8 @@
             justify-content: space-between;
         }
         .sprint-date {
-            @extend %large;
-            @extend %title;
+            @include font-size(large);
+            @include font-type(text);
             color: $gray-light;
             flex-flow: 1;
         }
@@ -141,7 +141,7 @@
     }
     .sprint-table {
         .sprint-empty {
-            @extend %light;
+            @include font-type(light);
             background: darken($whitish, 5%);
             border: 2px dashed lighten($gray-light, 10%);
             color: $gray;
@@ -181,7 +181,7 @@
             }
         }
         .column-us {
-            @extend %small;
+            @include font-size(small);
             flex-flow: 3;
             padding: 0 4px;
         }
@@ -226,7 +226,7 @@
             display: none;
         }
         .user-story-name {
-            @extend %small;
+            @include font-size(small);
             line-height: 1rem;
             margin-top: 5px;
         }
@@ -253,14 +253,14 @@
 }
 
 .sprints-empty {
-    @extend %light;
+    @include font-type(light);
     text-align: center;
     img {
         margin: 1rem 0;
         width: 50%;
     }
     .title {
-        @extend %large;
+        @include font-size(large);
         margin-bottom: .5rem;
         text-transform: uppercase;
     }

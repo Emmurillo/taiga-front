@@ -1,6 +1,6 @@
 .wiki-link {
-    @extend %large;
-    @extend %title;
+    @include font-size(large);
+    @include font-type(text);
     align-items: center;
     border-bottom: 1px solid $gray-light;
     display: flex;
@@ -42,8 +42,8 @@
         text-align: center;
     }
     input[type="text"] {
-        @extend %text;
-        @extend %medium;
+        @include font-type(text);
+        @include font-size(medium);
         background: $grayer;
         color: $whitish;
         @include placeholder {

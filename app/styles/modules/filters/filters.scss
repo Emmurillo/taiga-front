@@ -9,7 +9,7 @@
         }
     }
     .breadcrumb {
-        @extend %large;
+        @include font-size(large);
         margin-top: 1rem;
         .icon-arrow-right {
             @include svg-size(.7rem);
