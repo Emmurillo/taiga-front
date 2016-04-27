@@ -1,7 +1,7 @@
 .button,
 %button {
-    @extend %light;
-    @extend %small;
+    @include font-type(light);
+    @include font-size(small);
     background: transparent;
     border: 0;
     border-radius: 3px;
@@ -46,9 +46,9 @@
 }
 
 .trans-button {
-    @extend %medium;
-    @extend %title;
     @extend %button;
+    @include font-size(medium);
+    @include font-type(text);
     span,
     .icon {
         color: $blackish;
@@ -124,7 +124,7 @@ a.button-gray {
     background: $grayer;
     .icon,
     img {
-        @extend %large;
+        @include font-size(large);
         color: $white;
         margin-right: .5rem;
     }

@@ -4,7 +4,7 @@ html {
     width: 100%;
 }
 body {
-    @extend %text;
+    @include font-type(text);
     line-height: 1.3;
     min-height: 100%;
     width: 100%;

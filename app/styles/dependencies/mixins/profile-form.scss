@@ -6,7 +6,7 @@
         margin-bottom: 1rem;
     }
     label {
-        @extend %light;
+        @include font-type(light);
         display: block;
         margin-bottom: .2rem;
     }
@@ -46,7 +46,7 @@
         transform-origin: center center;
     }
     .use-default-image {
-        @extend %xsmall;
+        @include font-size(x-small);
         display: block;
         margin-top: .25rem;
         text-align: center;

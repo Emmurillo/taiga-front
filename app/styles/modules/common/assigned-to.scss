@@ -49,8 +49,8 @@
         flex-grow: 1;
         margin-left: .5rem;
         .assigned-title {
-            @extend %small;
-            @extend %light;
+            @include font-size(small);
+            @include font-type(light);
             color: $gray;
             display: block;
             margin: .2rem 0 .25rem;

@@ -13,8 +13,8 @@
         }
     }
     h3 {
-        @extend %bold;
-        @extend %large;
+        @include font-type(bold);
+        @include font-size(large);
         background: $whitish;
         color: $gray;
         margin: .5rem;
