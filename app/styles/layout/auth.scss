@@ -1,5 +1,5 @@
 .auth {
-    @extend %triangled-bg;
+    @include triangled-bg;
     align-items: center;
     bottom: 0;
     display: flex;

@@ -5,7 +5,7 @@ $column-flex: 1;
 $column-shrink: 0;
 $column-margin: 0 10px 0 0;
 
-%fold {
+@mixin fold {
     .taskboard-task {
         background: none;
         border: 0;
@@ -143,10 +143,10 @@ $column-margin: 0 10px 0 0;
         }
     }
     .row-fold {
-        @extend %fold;
+        @include fold;
     }
     .column-fold {
-        @extend %fold;
+        @include fold;
         .taskboard-task {
             max-width: 40px;
             width: 40px;

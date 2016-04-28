@@ -1,5 +1,5 @@
 .invitation-main {
-    @extend %background-taiga;
+    @include background-taiga;
     align-content: center;
     align-items: center;
     background-size: cover;
