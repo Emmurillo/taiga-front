@@ -1,9 +1,4 @@
 // Bourbon
-$prefix-for-webkit:    true;
-$prefix-for-mozilla:   true;
-$prefix-for-microsoft: true;
-$prefix-for-opera:     false;
-$prefix-for-spec:      true;
 @import '../../../vendor/bourbon/app/assets/stylesheets/bourbon';
 
 //#################################################
@@ -11,6 +6,7 @@ $prefix-for-spec:      true;
 //#################################################
 
 @import "variables";
+@import '../dependencies/reset';
 @import '../dependencies/helpers';
 @import '../dependencies/responsive';
 @import '../dependencies/mixins/typography';
