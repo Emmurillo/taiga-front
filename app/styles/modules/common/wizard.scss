@@ -1,5 +1,5 @@
 .wizard-create-project {
-    @extend %lightbox;
+    @include lightbox;
     .close {
         @include svg-size(2rem);
     }

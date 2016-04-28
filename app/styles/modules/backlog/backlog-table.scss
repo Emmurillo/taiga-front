@@ -290,7 +290,7 @@
         margin: 2% auto;
         width: 3rem;
         img {
-            @extend %loading-spinner;
+            @include loading-spinner;
             max-height: 3rem;
             max-width: 3rem;
         }

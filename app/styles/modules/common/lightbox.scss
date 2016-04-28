@@ -1,5 +1,5 @@
 .lightbox {
-    @extend %lightbox;
+    @include lightbox;
     h2 {
         @include font-size(xlarge);
         @include font-type(light);
@@ -427,7 +427,7 @@
         margin: 1rem auto;
         width: 5rem;
         img {
-            @extend %loading-spinner;
+            @include loading-spinner;
             max-height: 100%;
             max-width: 100%;
             width: 100%;

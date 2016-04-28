@@ -45,7 +45,7 @@
     }
     .sprint-name {
         a {
-            @include font-size(large);
+            @include font-size(normal);
             @include font-type(text);
             @include ellipsis($width: 90%);
             display: inline-block;
@@ -80,7 +80,7 @@
             }
         }
         .number {
-            @include font-size(large);
+            @include font-size(small);
         }
         .description {
             @include font-size(x-small);
@@ -92,13 +92,14 @@
             justify-content: space-between;
         }
         .sprint-date {
-            @include font-size(large);
+            @include font-size(small);
             @include font-type(text);
             color: $gray-light;
             flex-flow: 1;
         }
         ul {
             margin: 0;
+            text-align: right;
         }
         li {
             display: inline-block;

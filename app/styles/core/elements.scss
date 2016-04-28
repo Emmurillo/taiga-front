@@ -83,7 +83,7 @@ svg {
 
 .spin {
     img {
-        @extend %loading-spinner;
+        @include loading-spinner;
         max-height: 2rem;
         max-width: 2rem;
     }
