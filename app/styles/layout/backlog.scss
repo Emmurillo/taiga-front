@@ -5,7 +5,7 @@
     justify-content: space-between;
     margin-bottom: 1rem;
     .trans-button {
-        @extend %trans-button;
+        @extend %trans-button !optional;
         color: $blackish;
         display: inline-block;
         padding: .4rem 1.5rem;
